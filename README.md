@@ -10,7 +10,7 @@
 
 Note: We only tested the setup in Ubuntu 22 OS and cannot guarantee it will work on other systems. 
 
-<!-- The ROS2 code for running hardware experiment is in [this repo](https://github.com/nexuszhan/turtlebot4_ws/tree/main).  -->
+The ROS2 code for running hardware experiment is in [this repo](https://github.com/nexuszhan/turtlebot4_ws/tree/main). 
 
 ## Introduction to Repo Layout
 
