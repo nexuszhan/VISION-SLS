@@ -1,0 +1,39 @@
+device: "cuda"
+seed: 123
+
+dataset:
+  load_filename: "data/unicycle_10000_512small_03width_background4_075w_3pi4_op097_dino_1536_states_large_val.pt"
+  load_dino_filename: "../../data/train_data/unicycle/unicycle_10000_512small_03width_background_075w_3pi4_op097_dino_1536.pt"
+#  load_filename: "../../data/train_data/inv_pend/pendulum_noback_10000.pt"
+#  load_dino_filename: "../../data/train_data/inv_pend/pendulum_noback_10000_dino_1536.pt"
+  split: [0.95, 0.05]
+
+model:
+  z_dim: 1536
+  u_dim: 2
+  y_red_dim: 3
+  x_dim: 4
+  x_dim_error: 2
+
+losses:
+  weight_CPC: 1.0
+  weight_dyn: 1.0
+  weight_recon: 1.0
+  weight_underapprox: 100.0
+  weight_acc: 1.0 #0.5
+
+saving:
+  save_best_model: None
+
+train:
+  wandb:
+    enabled: True
+    project: null
+    entity: null
+  lr: 1e-3
+  epochs: 10000
+  batch_size: 64
+  load_ckpt: "data/unicycle_checkpoint_observability_ft_075w_3pi4_097_300000_post.pt"
+  load_ckpt_bound: "../../data/checkpoints/unicycle/unicycle_checkpoint_observability_bound.pt" #None
+  save_ckpt_train: "/model_unicycle_supervised_error_train.pt"
+  save_ckpt_val: "/model_unicycle_supervised_error_val.pt"
