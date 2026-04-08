@@ -5,8 +5,8 @@
    - `cd Safe-Perception-SLS`
 
 2. Create a Conda environment and install dependencies:
-   - 'conda env create -f safe-percpetion-sls.yml'
-   - 'pip install -e .'
+   - `conda env create -f safe-percpetion-sls.yml`
+   - `pip install -e .`
 
 Note: We only tested the setup in Ubuntu 22 OS and cannot guarantee it will work on other systems. 
 
