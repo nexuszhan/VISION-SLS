@@ -18,7 +18,7 @@ from solver.ocp_of import OCP_OF
 from solver.nlp import NLP
 from solver.nlp_multi_goal import NLP as NLP_multi
 
-from util.parallel_riccati import generate_state_Phi, generate_observer_Phi, np64_contig
+from solver.parallel_riccati import generate_state_Phi, generate_observer_Phi, np64_contig
 
 from prettytable import PrettyTable, NONE, HEADER
 

@@ -19,7 +19,7 @@ from prettytable import PrettyTable, NONE, HEADER
 
 import time
 
-from util.parallel_riccati import generate_tightening
+from solver.parallel_riccati import generate_tightening
 
 
 class fast_OF_SLS(OCP_OF):

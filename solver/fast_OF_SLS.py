@@ -18,7 +18,7 @@ from prettytable import PrettyTable, NONE, HEADER
 
 import time
 
-from util.parallel_riccati import generate_state_Phi, generate_observer_Phi,\
+from solver.parallel_riccati import generate_state_Phi, generate_observer_Phi,\
                                 generate_tightening, np64_contig
 
 
